@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Link from "next/link";
+import Header from "./components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,21 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>
-          <div className="container flex justify-between py-4 px-6 mx-auto">
-            <Link href="/" className="font-bold">
-              Job-finder
-            </Link>
-            <nav className="flex gap-4 *:bg-neutral-200 *:p-2">
-              <Link href={"/login"}>Login</Link>
-              <Link href={"/new-listing"}>Post a job</Link>
-            </nav>
-          </div>
-        </header>
-        {children}
-        <footer className="container py-8 text-gray-500">
-          Job-finder &copy; 2024 - All rights reserved
-        </footer>
+        <main className="px-4 py-6 container mx-auto">
+          <Header />
+          {children}
+          <footer className="container py-8 text-gray-500">
+            Job-finder &copy; 2024 - All rights reserved
+          </footer>
+        </main>
       </body>
     </html>
   );
