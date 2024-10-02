@@ -41,6 +41,9 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <footer className="container py-8 text-gray-500">
+          Job-finder &copy; 2024 - All rights reserved
+        </footer>
       </body>
     </html>
   );
