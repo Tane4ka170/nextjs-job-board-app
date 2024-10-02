@@ -7,6 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      screens: {
+        'lg':	'max-width: 1024px';
+'xl':'max-width: 1280px';
+'2xl':	'max-width: 1536px';
+      }
+    },
     extend: {
       colors: {
         background: "var(--background)",
