@@ -29,13 +29,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="px-4 py-6 container mx-auto">
-          <Header />
-          {children}
-          <footer className="container py-8 text-gray-500">
-            Job-finder &copy; 2024 - All rights reserved
-          </footer>
-        </main>
+        <Header />
+        {children}
+        <footer className="container py-8 text-gray-500">
+          Job-finder &copy; 2024 - All rights reserved
+        </footer>
       </body>
     </html>
   );
