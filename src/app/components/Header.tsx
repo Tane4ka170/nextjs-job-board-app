@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <div className="flex justify-between mx-auto items-center">
+      <div className="container flex justify-between mx-auto items-center my-4">
         <Link href="/" className="font-bold text-xl">
           Job-finder
         </Link>
