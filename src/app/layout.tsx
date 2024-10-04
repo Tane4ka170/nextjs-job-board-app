@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <footer className="container py-8 text-gray-500">
+        <footer className="container py-8 text-neutral-500">
           Job-finder &copy; 2024 - All rights reserved
         </footer>
       </body>
