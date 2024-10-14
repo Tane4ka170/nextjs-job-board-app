@@ -5,7 +5,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <Jobs />
+      <Jobs header={''} jobs={latestJobs} />
     </>
   );
 }
